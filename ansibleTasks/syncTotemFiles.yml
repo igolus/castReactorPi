@@ -1,6 +1,10 @@
 - name: Create castReactor dir if not exists
   ansible.builtin.command: mkdir -p /home/{{ user }}/castReactor
 
+- name: get files in home folder
+  command: ls -a /home/{{ user }}/
+  register: files_in_homeFolder
+
 - name: Copy open box autostart
   ansible.builtin.command: cp openbox/autostart /etc/xdg/openbox/
 
