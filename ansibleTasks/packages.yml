@@ -1,0 +1,10 @@
+- name: Install packages
+  apt:
+    name:
+      - htop
+      - mc
+      - tmux
+      - openbox
+      - chromium-browser
+      - xinit
+      - jq
