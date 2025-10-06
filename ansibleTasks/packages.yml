@@ -5,6 +5,5 @@
       - mc
       - tmux
       - openbox
-      - chromium-browser
       - xinit
       - jq
