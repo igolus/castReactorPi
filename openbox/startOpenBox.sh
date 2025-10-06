@@ -19,4 +19,4 @@ if [ $ONLINE -eq 0 ]; then
   echo "We are on line!"
 fi
 
-chromium-browser --no-sandbox --kiosk --autoplay-policy=no-user-gesture-required --disable-features=TranslateUI --noerrdialogs --disable-pinch --disable-infobars https://dashboard.castreactor.com/connect &
+chromium --no-sandbox --kiosk --autoplay-policy=no-user-gesture-required --disable-features=TranslateUI --noerrdialogs --disable-pinch --disable-infobars https://dashboard.castreactor.com/connect &
