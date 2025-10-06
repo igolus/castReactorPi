@@ -5,7 +5,6 @@
       apt:
         update_cache: yes
 
-
   tasks:
-    - include: ansibleTasks/packages.yml
-    - include: ansibleTasks/syncTotemFiles.yml
+    - import_tasks: ansibleTasks/packages.yml
+    - import_tasks: ansibleTasks/syncTotemFiles.yml
